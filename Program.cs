@@ -18,11 +18,7 @@ namespace PushPullBlocksGame
     internal class Program
     {
 
-        //public static int O(int Index)
-        //{
-        //    return Index - 1;
-        //}
-
+    
         public static void PrintActionPath(State state)
         {
             if (state == null) {
@@ -52,56 +48,6 @@ namespace PushPullBlocksGame
         static void Main(string[] args)
         {
             Game.Open();
-
-
-            // Test Heuristic Function
-            //Board board = BoardsFileReader.GetBoard(12);
-            //foreach (Board b in Global.Boards)
-            //{
-            //    State initialState = new State(b);
-            //    Console.WriteLine(initialState);
-            //    Console.WriteLine("\t\t\t\t\tCost = " + initialState.ComputeHeuristicCost());
-
-            //    Console.WriteLine("**************************************");
-            //    Console.WriteLine("**************************************");
-            //}
-
-
-
-
-
-            //int Counter = 1;
-            //BoardsFileReader.GetBoard(41);
-
-            //foreach (Board board in Global.Boards)
-            //{
-            //    Console.WriteLine("**************************************");
-            //    Console.WriteLine("\t\t\t\t\t\tLevel " + Counter);
-            //    Console.WriteLine(board);
-            //    State initialState = new State(board);
-            //    State goalStateUsingDFS = Algorithm.DFS(initialState);
-            //    State goalStateUsingBFS = Algorithm.BFS(initialState);
-            //    State goalStateUsingUCS = Algorithm.UCS(initialState);
-            //    State goalStateUsingHillClimbing = Algorithm.HillClimbing(initialState);
-            //    State goalStateUsingAStar = Algorithm.AStar(initialState);
-
-            //    Console.WriteLine("\n\t\t\t\t\t\tDFS");
-            //    PrintActionPath(goalStateUsingDFS);
-            //    Console.WriteLine("\n\t\t\t\t\t\tBFS");
-            //    PrintActionPath(goalStateUsingBFS);
-            //    Console.WriteLine("\n\t\t\t\t\t\tUCS");
-            //    PrintActionPath(goalStateUsingUCS);
-            //    Console.WriteLine("\n\t\t\t\t\t\tHill Climbing");
-            //    PrintActionPath(goalStateUsingHillClimbing);
-            //    Console.WriteLine("\n\t\t\t\t\t\tA Star");
-            //    PrintActionPath(goalStateUsingAStar);
-            //    Console.WriteLine("**************************************");
-            //    Counter++;
-            //}
-
-
-
-
         }
     }
 }
